@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - 'app/**'
-      - .github/workflow/deplpy-pr.yml
+      - .github/workflows/deplpy-pr.yml
 
 env:
   REGISTRY: ghcr.io
