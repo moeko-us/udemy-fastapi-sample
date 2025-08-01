@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - 'app/**'
-      - .github/workflow/deplpy-pr.yml
+      - .github/workflows/deploy-pr.yml
 
 env:
   REGISTRY: ghcr.io
@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout repogitory
         uses: actions/checkout@v4
-      
+
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
