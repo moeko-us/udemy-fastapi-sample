@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repogitory
         uses: actions/checkout@v4
       
-      - name: Docker meta
+      - name: Docker meta test
         id: meta
         uses: docker/metadata-action@v5
         with:
@@ -30,7 +30,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v5
         with:
           context: app
           push: true
