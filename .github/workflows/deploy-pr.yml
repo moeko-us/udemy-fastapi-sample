@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout repogitory
         uses: actions/checkout@v4
-      
+
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
